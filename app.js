@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Textcontain.textContent = `Status: ${status}`;
             Ss.textContent = `Currently Not Listening To Any Song`;
             At.textContent = `@${name}`;
-            Pfp.src = `/images/placeholder.png`;
+            Pfp.src = `./images/placeholder.png`;
             Art.textContent = `No songs playing...`;
             Album.href = `https://open.spotify.com`;
           }
