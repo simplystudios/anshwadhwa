@@ -1,0 +1,297 @@
+:root {
+    --act: #151515;
+    --actc: rgb(202, 194, 194);
+    --status-color: grey;
+    --online-color: green;
+    --offline-color: grey;
+    --dnd-color: red;
+    --idle-color: yellow;
+    --card-col: #1a1a1a;
+}
+
+.online {
+    color: var(--online-color);
+}
+
+.offline {
+    color: var(--offline-color);
+}
+
+.dnd {
+    color: var(--dnd-color);
+}
+
+.idle {
+    color: var(--idle-color);
+}
+
+* {
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.name {
+    margin: 5px;
+    font-size: 50px;
+}
+
+.me {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+.discord {
+    margin-right: 10px;
+    /* Add margin-right for spacing */
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* Add margin-left for spacing */
+}
+
+.all {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+.round{
+    border-radius: 10px;
+    margin: 10px;
+}
+.tagl {
+    text-align: center;
+}
+
+.at {
+    color: #f7f7f7;
+    margin: 5px;
+}
+
+.work {
+    display: block;
+    background-color: #fff32f2a;
+    padding: 10px;
+    border: rgb(79, 79, 63) solid 3px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#artist {
+    font-weight: bold;
+    background-color: var(--act);
+    color: #7d837f;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.material-symbols-rounded:hover {
+    text-align: center;
+    background-color: #060707;
+    color: #f7f7f7;
+}
+
+hr {
+    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #313235 solid 2px;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.social-icons a {
+    text-align: center;
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.social-icons a:hover {
+    color: #67491c;
+}
+
+.work:hover {
+    background-color: #060707;
+    color: rgb(224, 199, 75);
+}
+
+.list {
+    background-color: var(--act);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#song {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: var(--act);
+    color: #1db954;
+    margin-left: 10px;
+}
+
+
+
+#status {
+    font-weight: bolder;
+    margin: 0;
+    color: var(--status-color);
+    margin-left: 10px;
+}
+
+.status_div {
+    display: flex;
+}
+
+.status_ball {
+    display: block;
+    border: var(--status-color) solid 2px;
+    border-radius: 100px;
+    width: 5px;
+    height: 5px;
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+.pfp {
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 110px;
+    height: 110px;
+}
+
+.dclink {
+    display: flex;
+    background-color: var(--act);
+    text-underline-position: hidden;
+}
+
+.dclink:link {
+    text-decoration: none;
+}
+
+.topland {
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #0e0e0e);
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    background-color: var(--act);
+    border-radius: 10px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 20px 100px;
+}
+
+.card {
+    height: 300px;
+    background-color: var(--card-col);
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.pname {
+    background-color: var(--card-col);
+    color: #f7f7f7;
+    margin: 10px;
+}
+
+.pimg {
+    margin: 10px;
+    border-radius: 10px;
+    width: 70px;
+}
+
+.pdesc {
+    background-color: var(--card-col);
+    color: #f7f7f7;
+    margin-left: 10px;
+}
+
+.plink {
+    display: block;
+    background-color: var(--card-col);
+    margin-left: 95%;
+
+}
+
+.title {
+    background-color: var(--card-col);
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    .projects {
+        grid-template-columns: auto auto;
+    }
+
+    .card {
+
+        padding: 10px;
+        border-radius: 10px;
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .projects {
+        grid-template-columns: 100%;
+    }
+
+    .me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .status_div {
+        text-align: center;
+    }
+
+    .status_ball {
+        margin-left: 120px;
+    }
+
+    .pic-container {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
