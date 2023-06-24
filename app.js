@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const Art = document.getElementById("artist");
   const Album = document.getElementById("link");
   const Pic = document.getElementById("pic")
+  var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+
 
   const performSearch = () => {
     fetch(Api)
@@ -25,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const name = data.data.discord_user.username;
             const url = spotifyData.track_id;
 
-            Textcontain.textContent = `Status: ${status}`;
+            Textcontain.textContent = `${status}`;
             Ss.textContent = `${song}`;
             Art.textContent = `By ${artist}`;
             At.textContent = `@${name}`;
@@ -49,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             document.documentElement.style.setProperty('--status-color', color);
 
-            Textcontain.textContent = `Status: ${status}`;
+            Textcontain.textContent = `${status}`;
             Ss.textContent = `Currently Not Listening To Any Song`;
             At.textContent = `@${name}`;
             Pfp.src = `./images/placeholder.png`;
@@ -66,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   performSearch();
 });
+// Get the modal
