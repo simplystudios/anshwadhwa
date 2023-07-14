@@ -28,6 +28,18 @@ document.addEventListener("DOMContentLoaded", function () {
             const pfp = spotifyData.album_art_url;
             const name = data.data.discord_user.username;
             const url = spotifyData.track_id;
+            let color;
+
+            if (status === "dnd") {
+              color = 'red';
+            } else if (status === "online") {
+              color = 'green';
+            } else if (status === "offline") {
+              color = 'grey';
+            } else if (status === "idle") {
+              color = 'yellow';
+            }
+
 
             Textcontain.textContent = `${status}`;
             Ss.textContent = `${song}`;
@@ -35,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
             At.textContent = `@${name}`;
             Pfp.src = `${pfp}`;
             Album.href = `https://open.spotify.com/track/${url}`;
+             document.documentElement.style.setProperty('--status-color', color);
 
           } else {
             const status = data.data.discord_status;
