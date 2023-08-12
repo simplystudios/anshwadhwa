@@ -225,7 +225,7 @@ hr {
 }
 .status_div {
     display:flex;
-    margin-left: 20px;
+    margin-left: 10px;
     justify-content: start;
     align-items: center;
 }
@@ -267,7 +267,7 @@ hr {
     filter: drop-shadow(0.25rem 0.25rem 0.5rem #0e0e0e);
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
+    width: 80%;
     padding: 10px;
     display: flex;
     background-color: var(--act);
@@ -359,6 +359,12 @@ background-color: var(--card-col);
     .projects {
         grid-template-columns: 100%;
     }
+        .status_div {
+            display: flex;
+            margin-left: 40px;
+            justify-content: start;
+            align-items: center;
+        }
     .topland{
         width: 300px;
     }
