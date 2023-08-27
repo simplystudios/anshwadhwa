@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const pfp = spotifyData.album_art_url;
             const name = data.data.discord_user.username;
             const url = spotifyData.track_id;
+            const fullurl = `https://open.spotify.com/track/${url}`
             let color;
 
             if (status === "dnd") {
@@ -46,8 +47,15 @@ document.addEventListener("DOMContentLoaded", function () {
             Art.textContent = `By ${artist}`;
             At.textContent = `@${name}`;
             Pfp.src = `${pfp}`;
-            Album.href = `https://open.spotify.com/track/${url}`;
-             document.documentElement.style.setProperty('--status-color', color);
+            Album.href = fullurl;
+            document.documentElement.style.setProperty('--status-color', color);
+            Album.addEventListener("click", (event) => {
+                  // Prevent the default behavior of the link (navigating)
+                  event.preventDefault();
+                  
+                  // Open the link in a new tab/window
+                  window.open(`open.spotify.com/track/${url}`, "_blank");
+                });
 
           } else {
             const status = data.data.discord_status;
@@ -72,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Pfp.src = `./images/placeholder.png`;
             Art.textContent = `No songs playing...`;
             Album.href = `https://open.spotify.com`;
+            
           }
         }
       })

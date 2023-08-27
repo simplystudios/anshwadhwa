@@ -8,7 +8,9 @@
     --idle-color: yellow;
     --card-col : #1a1a1a;
 }
-
+body{
+    background-color: #0d0d0c;
+}
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -46,7 +48,6 @@
 
 * {
     font-family: 'poppins', sans-serif;
-    background-color: #0d0d0c;
     color: #fffdfd;
 }
 
@@ -61,7 +62,10 @@
     justify-content: center;
     /* Center items horizontally */
 }
-
+.bhr{
+    background-color: transparent;
+    border-color: transparent;
+}
 .discord {
     margin-right: 10px;
     /* Add margin-right for spacing */
@@ -94,8 +98,10 @@
 
 .work {
     display: block;
-    background-color: #fff32f2a;
+    background-color: #f1fa4688;
     padding: 10px;
+    color: #ffffff;
+    filter: blur(0.5px);
     border: rgb(79, 79, 63) solid 3px;
     margin-left: auto;
     margin-right: auto;
@@ -260,11 +266,8 @@ hr {
 .badge{
     text-align: center;
 }
-.badge-item{
-    
-}
 .topland {
-    filter: drop-shadow(0.25rem 0.25rem 0.5rem #0e0e0e);
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #1d1c02);
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -310,7 +313,9 @@ hr {
     display: block;
     background-color: var(--card-col);
     margin-left: 95%;
-    
+}
+.plink:hover{
+    color: #7d837f;
 }
 .card-git {
 background-color: var(--card-col);
