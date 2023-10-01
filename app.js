@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Get the button that opens the modal
 
-
+  function projects(){
+    window.open("/projects")
+  }
   const performSearch = () => {
     fetch(Api)
       .then((response) => response.json())

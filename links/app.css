@@ -17,11 +17,18 @@ html{
     color: rgb(0, 0, 0);
     font-weight:500;
 }
+ #twi {
+     color: #2e2e2e;
+ }
 a{
     color: aliceblue;
     text-decoration: none;
 }
-
+.main{
+    background-color: #2e2e2e;
+    padding: 15px;
+    border-radius: 10px;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -54,9 +61,14 @@ a{
     color: rgb(255, 255, 255);
     font-size: 25px;
 }
-
-.social-icons a:hover {
-    color: #67491c;
+.twitter :hover {
+    color: #1d79d6;
+}
+.instagram :hover {
+    color: #E1306C;
+}
+.github :hover {
+    color: #333;
 }
 .headerlink{
     color: rgb(255, 255, 255);
@@ -76,10 +88,102 @@ a{
     padding: 10px;
     border-radius: 10px;
 }
+.linkcrdmain {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+}
+.twt {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(175, 234, 244);
+    padding: 10px;
+    border-radius: 10px;
+}
+.inst {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(244, 175, 185);
+    padding: 10px;
+    border-radius: 10px;
+}
+.peerlist {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(189, 244, 175);
+    padding: 10px;
+    border-radius: 10px;
+}
 .linkcrd:hover{
     cursor:pointer;
     background-color:#808080 ;
 }
 .title:hover{
     cursor: pointer;
+}
+@media screen and (min-width:700px) {
+    .main {
+            background-color: #2e2e2e;
+            padding: 15px;
+            width: 450px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    .linkcrd {
+            width: 400px;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+    .linkcrdmain {
+            width: 400px;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(228, 244, 175);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        .twt {
+            width: 400px;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(175, 234, 244);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        .inst {
+            width: 400px;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(244, 175, 185);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        .peerlist {
+            width: 400px;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(189, 244, 175);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
 }
