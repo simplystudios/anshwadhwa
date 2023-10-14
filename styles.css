@@ -96,6 +96,8 @@ body{
     margin: 5px;
 }
 
+
+
 .work {
     display: block;
     background-color: #f1fa4688;
@@ -245,6 +247,66 @@ hr {
     background-color: var(--status-color);
     height: 7px;
 }
+ .footer {
+     color: white;
+     position: absolute;
+     height: 4em;
+     background-color: var(--backcolor);
+     padding: 30px;
+     margin-top: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .logo {
+     color: #898b91;
+     font-size: 20px;
+     text-align: center;
+     padding: 0px;
+     font-weight: bold;
+     margin-top: auto;
+     margin-bottom: auto;
+ }
+
+ .logoimg {
+     width: 30px;
+     margin-top: auto;
+     margin-bottom: -5px;
+ }
+ .bottom{
+    text-align: center;
+ }
+
+ .footer-nav ul {
+     list-style-type: none;
+     padding: 0;
+     margin-left: 10px;
+     margin-right: auto;
+     text-align: center;
+ }
+
+ .footer-nav li {
+     display: inline;
+     margin-left: 10px;
+     text-align: center;
+     margin-right: auto;
+ }
+
+ a {
+     text-decoration: none;
+     color: #a7a7a7;
+ }
+
+ .social-icons a {
+     margin-left: 10px;
+     color: rgb(255, 253, 250);
+     font-size: 20px;
+ }
+
+ a:hover {
+     color: #2d4955;
+ }
 
 .pfp {
     border-radius: 10px;
